@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    position: fixed; 
+}
+
+.black_bg {
+    background-color: #222;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 24px;
+}
+
+.nav .logo {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.nav.active {
+    background-color: black;
+    color: white;
+}
+
+.nav .icon {
+    display: none;
+}
+
+.nav a:hover,
+.dropdown:hover .dropbtn {
+    color: white;
+}
+
+
+.dropdown {
+    cursor: pointer;
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: gray;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 3px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    width: 100px;
+    margin-top: 7px;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.form-group {
+    float: right;
+    padding-right: 21pc;
+    margin-top: -4px;
+}
+
+.form-control {
+    border-radius: 4px;
+    height: 30px;
+    background-color: #fff;
+    outline: none;
+}
+
+.form-control:hover,
+.form-control:active {
+    box-shadow: 0px 3px 8px #E4E4E4;
+    outline: none;
+}
+
+.header {
+    background-color: yellowgreen;
+    padding-top: 70px;
+    box-sizing: border-box;
+    height: 300px;
+    margin-bottom: 70px;
+}
+
+.header h1 {
+    color: greenyellow;
+    font-size: 50px;
+    margin-bottom: -7px;
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.header p {
+    font-size: 21px;
+    color: greenyellow;
+    padding-bottom: 48px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    height: 36px;
+    cursor: pointer;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+}
+
+small {
+    color: gray;
+    font-weight: lighter;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    gap: 30px;
+}
+
+.center a {
+    color: #337ab7;
+    font-size: 24px;
+    margin: 10px 0 10px;
+    padding-left: 10px;
+}
+
+.center p {
+    font-size: 15px;
+    margin: 10px 0px 10px;
+    font-weight: lighter;
+    color: gray;
+    padding-left: 10px;
+}
+
+.center a:link {
+    text-decoration: none;
+}
+
+.center a:visited {
+    text-decoration: none;
+}
+
+.center a:hover {
+    text-decoration: underline;
+}
+
+.center a:active {
+    background-color: black;
+}
+
+.golden_bg {
+    background-color: goldenrod;
+}
+
+.row h1 {
+    font-weight: lighter;
+    padding-left: 10px;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.row p {
+    font-weight: lighter;
+    color: gray;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.section_con {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+    gap: 10px;
+}
+
+.section_con h1 {
+    font-size: 24px;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+.section_con p {
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.section_con div {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.section_con .button {
+    margin-left: 10px;
+}
+
+.center div {
+    padding-bottom: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+footer p a {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+footer a {
+    color: #337ab7;
+}
+
+.center img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .nav a:not(), .dropdown{
+        display: block;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+.nav{
+    position: fixed;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .nav.responsive {
+    
+        right: 0;
+        top: 0;
+        height: auto;
+        background-color: black;
+    }
+
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav .box{
+        display: none;
+    }
+
+    .nav.responsive .box{
+        display: block;
+    }
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .nav.responsive .dropdown {
+        float: left;
+    }
+
+    .nav.responsive  {
+   
+        display: block;
+    }
+
+    .nav.responsive .dropdown{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav.responsive .dropbtn{
+        display: block;
+        position: relative;
+    }
+    .nav.responsive .dropdown-content{
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: -10px;
+    }
+   
+    .nav.responsive .form-group{
+        float: left;
+    }
+    .nav.responsive .form-control{
+        width: 180%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+
+    .header {
+        height: 400px;
+        background-color: yellowgreen;
+        margin: auto;
+        padding-left: 13px;
+        font-size: 34px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+
+    .center {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+
+    .img {
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+
+    .section_con {
+        display: inline;
+    }
+}
